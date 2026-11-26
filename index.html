@@ -6,6 +6,10 @@
 <title>Mingxin Medical Tourism in China — Medical Care, Arranged End to End</title>
 <meta name="description" content="Mingxin Medical Tourism arranges medical care in China for international patients and referring clinics: airport pickup, hospital appointments, treatment, recovery and follow-up, handled by one English-speaking coordinator.">
 <link rel="canonical" href="https://mingxinhealth.com/">
+<link rel="alternate" hreflang="en" href="https://mingxinhealth.com/">
+<link rel="alternate" hreflang="ru" href="https://mingxinhealth.com/?lang=ru">
+<link rel="alternate" hreflang="ar" href="https://mingxinhealth.com/?lang=ar">
+<link rel="alternate" hreflang="x-default" href="https://mingxinhealth.com/">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Mingxin Medical Tourism (China)">
@@ -116,7 +120,8 @@
   .hero-body{max-width:660px;color:#fff}
   .eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:26px}
   .eyebrow i{display:block;width:44px;height:1px;background:var(--gold);flex:none}
-  .eyebrow span{font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-soft);font-weight:600}
+  .eyebrow span{font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;color:#F7E6C2;font-weight:600;
+    text-shadow:0 1px 4px rgba(0,15,30,.72),0 0 20px rgba(0,15,30,.45)}
   .hero h1{
     font-size:clamp(32px,4.9vw,60px);font-weight:600;line-height:1.1;letter-spacing:-.028em;
     text-shadow:0 2px 30px rgba(0,0,0,.3);
@@ -132,7 +137,7 @@
   .btn-gold:hover{background:#D8B775}
   .btn-ghost{border:1px solid rgba(255,255,255,.55);color:#fff;background:rgba(9,34,56,.34);backdrop-filter:blur(3px)}
   .btn-ghost:hover{border-color:var(--gold);color:var(--gold-soft)}
-  .hero-note{margin-top:24px;font-size:12.5px;letter-spacing:.02em;color:rgba(255,255,255,.82);text-shadow:0 1px 10px rgba(0,20,35,.3)}
+  .hero-note{margin-top:24px;font-size:12.5px;letter-spacing:.02em;color:rgba(255,255,255,.9);text-shadow:0 1px 10px rgba(0,20,35,.4)}
 
   /* ---------- quick links ---------- */
   .quick{background:var(--white);border-bottom:1px solid var(--line)}
@@ -275,6 +280,66 @@
   footer .fine{margin-top:16px;font-size:11.5px;color:#6F8497;line-height:1.7}
   footer .right{text-align:right;min-width:200px;font-size:12px}
   @media(max-width:640px){footer .right{text-align:left}}
+
+  /* ---------- language switch ---------- */
+  .lang{position:relative;flex:none}
+  .lang-btn{display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:12px;font-weight:600;
+    letter-spacing:.08em;color:rgba(255,255,255,.86);background:none;border:1px solid rgba(255,255,255,.26);
+    border-radius:2px;padding:9px 11px;cursor:pointer;transition:border-color .2s,color .2s}
+  .lang-btn:hover{color:#fff;border-color:rgba(255,255,255,.5)}
+  .lang-btn .car{width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;
+    border-top:5px solid currentColor;opacity:.75;margin-top:1px}
+  .lang-menu{position:absolute;top:calc(100% + 8px);right:0;min-width:158px;background:#fff;border:1px solid var(--line);
+    border-radius:2px;box-shadow:0 12px 32px rgba(10,30,50,.18);padding:6px;z-index:140;list-style:none}
+  .lang-menu[hidden]{display:none}
+  .lang-menu button{display:block;width:100%;text-align:left;font:inherit;font-size:13.5px;color:#243447;
+    background:none;border:none;padding:9px 12px;cursor:pointer;border-radius:2px}
+  .lang-menu button:hover{background:#F4F1EA}
+  .lang-menu button[aria-current="true"]{color:#8E6F31;font-weight:600}
+  .lang-m{display:flex;gap:8px;padding:18px 0 2px;flex-wrap:wrap}
+  .lang-m button{font:inherit;font-size:12.5px;color:rgba(255,255,255,.8);background:none;
+    border:1px solid rgba(255,255,255,.24);border-radius:2px;padding:8px 12px;cursor:pointer}
+  .lang-m button[aria-current="true"]{background:var(--gold);color:#16202B;border-color:var(--gold)}
+
+  /* ---------- rtl ---------- */
+  [dir=rtl] body{font-family:"Segoe UI",Tahoma,"Noto Sans Arabic","Dubai",Arial,sans-serif;line-height:1.85}
+  [dir=rtl] h1,[dir=rtl] h2,[dir=rtl] h3,[dir=rtl] h4{letter-spacing:0}
+  [dir=rtl] .hero h1{font-size:clamp(28px,4.2vw,50px);line-height:1.3;letter-spacing:0}
+  [dir=rtl] .eyebrow span,[dir=rtl] .kicker span,[dir=rtl] .svc-copy .no,[dir=rtl] .step .no,
+  [dir=rtl] .who .rl,[dir=rtl] .chan span,[dir=rtl] .nav,[dir=rtl] .intro figure .cap{letter-spacing:0}
+  [dir=rtl] .q-item{border-right:none;border-left:1px solid var(--line)}
+  [dir=rtl] .q-item:last-child{border-left:none}
+  [dir=rtl] .q-item .go{right:auto;left:28px}
+  [dir=rtl] .intro figure .cap{left:auto;right:0}
+  [dir=rtl] .step{border-right:none;border-left:1px solid var(--line)}
+  [dir=rtl] .step:last-child{border-left:none}
+  [dir=rtl] footer .right{text-align:left}
+  [dir=rtl] .lang-menu{right:auto;left:0}
+  [dir=rtl] .lang-menu button{text-align:right}
+  [dir=rtl] .lang-btn{direction:ltr}
+  [dir=rtl] .q-item .go{transform:scaleX(-1)}
+  [dir=rtl] .q-item:hover .go{transform:scaleX(-1) translateX(3px)}
+
+  /* ---------- language-specific type tuning ---------- */
+  [lang=ru] .nav{gap:20px;font-size:12.2px}
+  [lang=ru] .hero h1{font-size:clamp(26px,3.9vw,47px);line-height:1.18}
+  [lang=ru] .hero-body{max-width:760px}
+  [lang=ru] .eyebrow span,[lang=ru] .kicker span{letter-spacing:.16em}
+  [lang=ar] .hero h1{font-size:clamp(26px,3.9vw,46px);line-height:1.34}
+  [lang=ar] .nav{gap:20px;font-size:12.5px}
+  [lang=ar] .eyebrow span,[lang=ar] .kicker span{letter-spacing:0;font-weight:600}
+  [dir=rtl] .services p[style]{padding-left:0 !important;padding-right:16px !important;
+    border-left:0 !important;border-right:2px solid var(--gold) !important}
+  [dir=rtl] .list li,[dir=rtl] .q-item p,[dir=rtl] .svc-copy p,[dir=rtl] .lead,[dir=rtl] .side-card p{text-align:right}
+  [dir=rtl] .chan a,[dir=rtl] .refer-box .mail,[dir=rtl] .btn-ghost,[dir=rtl] .hero-note,
+  [dir=rtl] footer .right,[dir=rtl] .q-item p{unicode-bidi:isolate}
+  [dir=rtl] .chan a,[dir=rtl] .refer-box .mail,[dir=rtl] .btn-ghost{direction:ltr;display:inline-block}
+  [dir=rtl] footer .right{direction:ltr}
+  [dir=rtl] .chan a{text-align:left}
+  @media(max-width:900px){
+    [dir=rtl] .q-item:nth-child(2n){border-left:none}
+    [dir=rtl] .step:nth-child(2n){border-left:none}
+  }
 </style>
 </head>
 <body>
@@ -294,6 +359,16 @@
       <a href="#contact">Contact</a>
       <a class="btn-mini" href="https://wa.me/message/CJECR4HTUTQNL1" target="_blank" rel="noopener">WhatsApp</a>
     </nav>
+    <div class="lang" id="lang">
+      <button class="lang-btn" id="langBtn" type="button" aria-haspopup="true" aria-expanded="false">
+        <span id="langCur">EN</span><span class="car"></span>
+      </button>
+      <ul class="lang-menu" id="langMenu" hidden>
+        <li><button type="button" data-lang="en">English</button></li>
+        <li><button type="button" data-lang="ru">Русский</button></li>
+        <li><button type="button" data-lang="ar">العربية</button></li>
+      </ul>
+    </div>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
   </div>
   <div class="mobile-menu" id="mmenu">
@@ -303,6 +378,11 @@
     <a href="#clinics">For clinics</a>
     <a href="#contact">Contact</a>
     <a href="https://wa.me/message/CJECR4HTUTQNL1" target="_blank" rel="noopener">WhatsApp</a>
+    <div class="lang-m">
+      <button type="button" data-lang="en">English</button>
+      <button type="button" data-lang="ru">Русский</button>
+      <button type="button" data-lang="ar">العربية</button>
+    </div>
   </div>
 </header>
 
@@ -588,6 +668,8 @@
   });
 })();
 </script>
+<script src="i18n.js"></script>
+<script src="lang.js"></script>
 </body>
 </html>
 
