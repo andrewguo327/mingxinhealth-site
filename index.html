@@ -103,14 +103,14 @@
   /* ---------- hero ---------- */
   .hero{
     position:relative;min-height:min(86vh,820px);display:flex;align-items:flex-end;
-    background:url("img/hero-1600.jpg") center 38%/cover no-repeat #0B2740;
+    background:url("img/hero-1600.jpg") center 46%/cover no-repeat #2C7BA8;
     padding:150px 0 72px;overflow:hidden;
   }
   .hero:before{
     content:"";position:absolute;inset:0;
     background:
-      linear-gradient(90deg,rgba(7,22,38,.86) 0%,rgba(7,22,38,.56) 44%,rgba(7,22,38,.12) 78%,rgba(7,22,38,.26) 100%),
-      linear-gradient(0deg,rgba(7,22,38,.72) 0%,rgba(7,22,38,0) 46%);
+      linear-gradient(90deg,rgba(9,34,56,.62) 0%,rgba(9,34,56,.30) 42%,rgba(9,34,56,.02) 74%,rgba(9,34,56,.06) 100%),
+      linear-gradient(0deg,rgba(9,34,56,.44) 0%,rgba(9,34,56,0) 42%);
   }
   .hero .wrap{position:relative;z-index:2;width:100%}
   .hero-body{max-width:660px;color:#fff}
@@ -122,7 +122,7 @@
     text-shadow:0 2px 30px rgba(0,0,0,.3);
   }
   .hero h1 em{font-style:normal;color:var(--gold-soft)}
-  .hero .sub{margin-top:26px;font-size:clamp(15.5px,1.55vw,18.5px);color:rgba(255,255,255,.84);max-width:54ch;line-height:1.7}
+  .hero .sub{margin-top:26px;font-size:clamp(15.5px,1.55vw,18.5px);color:rgba(255,255,255,.94);max-width:54ch;line-height:1.7;text-shadow:0 1px 14px rgba(0,20,35,.35)}
   .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
   .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:2px;
     font-size:14.5px;font-weight:600;letter-spacing:.01em;transition:transform .18s,background .2s,border-color .2s,color .2s}
@@ -130,9 +130,9 @@
   .btn svg{width:15px;height:15px;flex:none}
   .btn-gold{background:var(--gold);color:#14202C}
   .btn-gold:hover{background:#D8B775}
-  .btn-ghost{border:1px solid rgba(255,255,255,.38);color:#fff}
+  .btn-ghost{border:1px solid rgba(255,255,255,.55);color:#fff;background:rgba(9,34,56,.34);backdrop-filter:blur(3px)}
   .btn-ghost:hover{border-color:var(--gold);color:var(--gold-soft)}
-  .hero-note{margin-top:24px;font-size:12.5px;letter-spacing:.02em;color:rgba(255,255,255,.56)}
+  .hero-note{margin-top:24px;font-size:12.5px;letter-spacing:.02em;color:rgba(255,255,255,.82);text-shadow:0 1px 10px rgba(0,20,35,.3)}
 
   /* ---------- quick links ---------- */
   .quick{background:var(--white);border-bottom:1px solid var(--line)}
